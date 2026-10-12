@@ -1,0 +1,5 @@
+EcoCycle - E-Waste Collection & Recycling Management System
+Static File Serving Test
+This static resource is served directly by Express static middleware (express.static).
+Folder: backend/public/info.txt
+Server: Node.js + Express.js (Port 5000)

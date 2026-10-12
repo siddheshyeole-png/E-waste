@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="12" fill="#16a34a"/>
+  <!-- Recycling arrows combined with electronic circuit board node -->
+  <path d="M24 10V15L28 12.5L24 10Z" fill="#ffffff"/>
+  <path d="M16 26C16 21.5817 19.5817 18 24 18V15C17.9249 15 13 19.9249 13 26H16Z" fill="#ffffff"/>
+  <path d="M35 22L30 22L32.5 26L35 22Z" fill="#ffffff"/>
+  <path d="M32 26C32 30.4183 28.4183 34 24 34L24 37C30.0751 37 35 32.0751 35 26L32 26Z" fill="#ffffff"/>
+  <circle cx="24" cy="26" r="3.5" fill="#bbf7d0"/>
+  <circle cx="24" cy="18" r="1.5" fill="#ffffff"/>
+  <circle cx="20" cy="30" r="1.5" fill="#ffffff"/>
+  <circle cx="28" cy="22" r="1.5" fill="#ffffff"/>
+</svg>

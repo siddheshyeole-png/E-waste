@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#dae2fd","surface-tint":"#006e2d","on-primary-fixed":"#002109","background":"#faf8ff","on-primary":"#ffffff","primary-fixed-dim":"#62df7d","on-surface":"#131b2e","surface-container":"#eaedff","on-secondary-fixed":"#00210d","surface-container-lowest":"#ffffff","inverse-primary":"#62df7d","on-tertiary-fixed":"#00210f","error":"#ba1a1a","on-primary-fixed-variant":"#005320","secondary-fixed":"#c1edc8","on-tertiary-container":"#f6fff5","surface-container-high":"#e2e7ff","surface-container-low":"#f2f3ff","inverse-on-surface":"#eef0ff","secondary":"#40674a","on-secondary-container":"#466d4f","on-background":"#131b2e","primary-container":"#00873a","inverse-surface":"#283044","surface-container-highest":"#dae2fd","tertiary-container":"#08864e","surface":"#faf8ff","surface-dim":"#d2d9f4","outline-variant":"#bdcaba","on-primary-container":"#f7fff2","on-error-container":"#93000a","surface-bright":"#faf8ff","on-surface-variant":"#3e4a3d","outline":"#6e7b6c","on-secondary-fixed-variant":"#284f33","on-secondary":"#ffffff","secondary-container":"#c1edc8","secondary-fixed-dim":"#a6d1ad","on-error":"#ffffff","primary-fixed":"#7ffc97","on-tertiary-fixed-variant":"#00522d","tertiary-fixed-dim":"#73db9a","on-tertiary":"#ffffff","tertiary":"#006a3c","primary":"#006b2c","error-container":"#ffdad6","tertiary-fixed":"#8ff8b4"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xs":"0.25rem",margin:"2rem","gutter-sm":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-mobile":"1rem",gutter:"1.5rem","space-md":"1rem","space-xl":"2.5rem"},fontFamily:{"display":["Plus Jakarta Sans"],"body-md":["Inter"],"title-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Inter"],"label-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"display-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"display":["48px",{lineHeight:"56px",letterSpacing:"-0.025em",fontWeight:"800"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"display-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.015em",fontWeight:"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col py-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-md mb-space-lg flex items-center gap-space-sm"><img alt="EWaste Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xb3IlIT82_8_7u_YvrVpomEnq3WenJYX7BvHy_vpa_HU6oa_ekzov59rbyF7F9dP8ghajiuaNuB1BxYss6j8Q4VqRiKxoj5WRsb2g-91SDbV-ZaEwF4C_B_EAALAjxEu9Itj86_W591tphfXtwfCA6KEU5blPeqspZDeeXIPeRC6ZTQnrDf0QAHSwgcrCs4j2npPl-zdNR7wjYLyAgtwLatAF3njOwvYocnpp0ealT7LaLIPCqb7jzjQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight">EcoCycle</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Admin Portal</span></div></div><div class="px-space-md mb-space-sm"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Dispatch &amp; Control</span></div><nav class="flex-1 px-space-sm space-y-space-xs overflow-y-auto" data-active-classes="bg-secondary-container text-on-secondary-container font-title-md"><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-lg transition-colors bg-secondary-container text-on-secondary-container font-title-md" data-path="admin-overview" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">Overview</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="admin-requests" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">pending_actions</span><span class="font-label-lg text-label-lg">All Pickup Requests</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="admin-inventory" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">inventory_2</span><span class="font-label-lg text-label-lg">Waste Categories</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="admin-logistics" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">local_shipping</span><span class="font-label-lg text-label-lg">Logistics &amp; Fleet</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="admin-reports" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">analytics</span><span class="font-label-lg text-label-lg">Sustainability Audit</span></a><div class="pt-space-md mb-space-sm px-space-sm"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">System Navigation</span></div><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">public</span><span class="font-label-lg text-label-lg">Public Portal</span></a></nav><div class="px-space-md pt-space-sm bg-surface-container-low/50 mx-space-sm rounded-xl p-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-title-md text-title-md truncate">Admin Operator</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Campus Facilities Dept</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Campus Operations Console</span><span class="inline-flex items-center px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Live Fleet Active</span></div><div class="flex items-center gap-space-md"><a class="font-label-sm text-label-sm text-primary hover:text-primary-container transition-colors hidden sm:block" data-path="request-pickup" href="#">+ New Intake</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-background w-full min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full space-y-space-xl">
+<!-- TOP HEADER / CONTROL BAR -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Central E-Waste Operations</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          System Status: Active • DB Connected
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Academic Capstone Console — Department of Environmental Informatics &amp; Logistics
+      </p>
+</div>
+<!-- Quick Tool Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="inline-flex items-center gap-space-xs px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-all shadow-sm" id="refreshBtn" onclick="triggerRefreshAnimation()">
+<span class="material-symbols-outlined text-[18px]" id="refreshIcon">refresh</span>
+<span>Refresh Table</span>
+</button>
+<div class="relative inline-block text-left" id="exportMenuWrapper">
+<button class="inline-flex items-center gap-space-xs px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all shadow-sm" onclick="toggleExportMenu()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Audit Log</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<div class="hidden absolute right-0 mt-2 w-48 rounded-xl bg-surface-container-lowest shadow-xl p-1.5 z-30" id="exportMenu">
+<button class="w-full text-left px-3 py-2 text-on-surface hover:bg-surface-container rounded-lg font-label-md text-label-md flex items-center justify-between" onclick="simulateExport('CSV')">
+<span>Export as CSV</span>
+<span class="font-label-sm text-outline">.csv</span>
+</button>
+<button class="w-full text-left px-3 py-2 text-on-surface hover:bg-surface-container rounded-lg font-label-md text-label-md flex items-center justify-between" onclick="simulateExport('JSON')">
+<span>Export as JSON</span>
+<span class="font-label-sm text-outline">.json</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- STAT METRICS CARDS -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stat 1: Total Requests -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Total Pickups</span>
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">inbox</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface" id="statTotalCount">128</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+          +12 this week
+        </span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant">Cumulative campus drop-offs</span>
+</div>
+<!-- Stat 2: Pending Review -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Pending Review</span>
+<div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700">
+<span class="material-symbols-outlined text-[22px]">pending</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface" id="statPendingCount">14</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm">
+          Needs Action
+        </span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant">Awaiting admin gate pass</span>
+</div>
+<!-- Stat 3: Scheduled Pickups -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Scheduled Van Routes</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">local_shipping</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface">36</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+          3 Drivers Active
+        </span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant">En-route across 4 quadrants</span>
+</div>
+<!-- Stat 4: Completed & Recycled -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Processed &amp; Recycled</span>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">recycling</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface">78</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">
+          94.2% Success
+        </span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant">Certified neutral safe recovery</span>
+</div>
+</div>
+<!-- SEARCH & FILTER TOOLBAR -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col md:flex-row gap-space-md items-center justify-between">
+<div class="relative w-full md:w-96">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 rounded-lg bg-surface text-on-surface font-body-md text-body-md placeholder-outline focus:outline-none focus:bg-surface-container-low transition-all" id="searchInput" oninput="applyFilters()" placeholder="Filter by ID, citizen name, phone, or location..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto flex-wrap sm:flex-nowrap">
+<!-- Category Filter -->
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider whitespace-nowrap" for="categoryFilter">Category:</label>
+<select class="w-full sm:w-auto px-3 py-2 rounded-lg bg-surface text-on-surface font-label-md text-label-md focus:outline-none" id="categoryFilter" onchange="applyFilters()">
+<option value="ALL">All Categories</option>
+<option value="Computers">Laptops / Computers</option>
+<option value="Mobiles">Smartphones &amp; Tablets</option>
+<option value="Batteries">Lead &amp; Li-ion Batteries</option>
+<option value="Peripherals">Printers &amp; Peripherals</option>
+<option value="Monitors">CRTs &amp; Displays</option>
+</select>
+</div>
+<!-- Status Filter -->
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider whitespace-nowrap" for="statusFilter">Status:</label>
+<select class="w-full sm:w-auto px-3 py-2 rounded-lg bg-surface text-on-surface font-label-md text-label-md focus:outline-none" id="statusFilter" onchange="applyFilters()">
+<option value="ALL">All Statuses</option>
+<option value="Pending">Pending</option>
+<option value="Approved">Approved</option>
+<option value="Scheduled">Scheduled</option>
+<option value="Completed">Completed</option>
+<option value="Cancelled">Cancelled</option>
+</select>
+</div>
+<button class="px-3 py-2 rounded-lg bg-surface text-outline hover:text-on-surface transition-colors" onclick="resetFilters()" title="Reset Filters">
+<span class="material-symbols-outlined text-[20px] align-middle">filter_alt_off</span>
+</button>
+</div>
+</div>
+<!-- TABLE SECTION -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-5 py-4 bg-surface-container-low/40 flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-md text-title-md text-on-surface">Collection Intake Stream</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" id="recordsBadge">
+          Showing 5 records
+        </span>
+</div>
+<div class="text-outline font-label-sm text-label-sm flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+        Synchronized with Node/Express REST Layer
+      </div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="requestsTable">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4">Request ID</th>
+<th class="py-3 px-4">Citizen / User</th>
+<th class="py-3 px-4">E-Waste Item &amp; Qty</th>
+<th class="py-3 px-4">Scheduled Date</th>
+<th class="py-3 px-4">Status</th>
+<th class="py-3 px-4 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 text-on-surface font-body-md text-body-md" id="tableBody">
+<!-- Row 1 -->
+<tr class="hover:bg-surface transition-colors" data-cat="Computers" data-id="#REQ-1092" data-status="Pending">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-semibold">
+              #REQ-1092
+            </td>
+<td class="py-4 px-4">
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Rahul Mehta</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">rahul.m@campus.edu • +91 98201 44102</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg">2x Dell Precision Laptops</span>
+<span class="font-body-sm text-body-sm text-outline">Category: Computing Equipment</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span>
+<span>Oct 25, 2024</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                Pending
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openModal('#REQ-1092', 'Rahul Mehta', '2x Dell Precision Laptops', 'Oct 25, 2024', 'Pending', 'Block B Science Hall Room 304')" title="View Detail">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="px-2.5 py-1 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm transition-colors" onclick="updateStatus(this, 'Approved')" title="Approve Request">
+                  Approve
+                </button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" onclick="updateStatus(this, 'Scheduled')" title="Assign Logistics">
+                  Schedule
+                </button>
+<button class="p-1.5 rounded-lg hover:bg-red-50 text-error transition-colors" onclick="deleteRow(this)" title="Delete record">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface transition-colors" data-cat="Monitors" data-id="#REQ-1091" data-status="Approved">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-semibold">
+              #REQ-1091
+            </td>
+<td class="py-4 px-4">
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Dr. Ananya Sharma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">asharma@engineering.edu • +91 94002 81920</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg">1x Sony Trinitron CRT TV / Monitor</span>
+<span class="font-body-sm text-body-sm text-outline">Category: CRT Monitors</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span>
+<span>Oct 26, 2024</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-blue-100 text-blue-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                Approved
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openModal('#REQ-1091', 'Dr. Ananya Sharma', '1x Sony Trinitron CRT TV', 'Oct 26, 2024', 'Approved', 'ECE Dept Lab 4, Tech Tower')" title="View Detail">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" onclick="updateStatus(this, 'Scheduled')" title="Schedule Pickup">
+                  Schedule
+                </button>
+<button class="px-2.5 py-1 rounded-lg bg-primary-fixed hover:bg-secondary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm transition-colors" onclick="updateStatus(this, 'Completed')" title="Mark Collected">
+                  Complete
+                </button>
+<button class="p-1.5 rounded-lg hover:bg-red-50 text-error transition-colors" onclick="deleteRow(this)" title="Delete record">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface transition-colors" data-cat="Batteries" data-id="#REQ-1090" data-status="Scheduled">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-semibold">
+              #REQ-1090
+            </td>
+<td class="py-4 px-4">
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Campus Facilities Maintenance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">facilities@campus.edu • Ext: 4401</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg">8x 12V Lead-Acid Inverter Batteries</span>
+<span class="font-body-sm text-body-sm text-outline">Category: Lead &amp; Li-ion</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span>
+<span>Oct 24, 2024</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+                Scheduled
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openModal('#REQ-1090', 'Campus Facilities Maintenance', '8x 12V Lead-Acid Batteries', 'Oct 24, 2024', 'Scheduled', 'Substation #2 Electrical Yard')" title="View Detail">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="px-2.5 py-1 rounded-lg bg-primary-fixed hover:bg-secondary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm transition-colors" onclick="updateStatus(this, 'Completed')" title="Mark Collected">
+                  Complete
+                </button>
+<button class="p-1.5 rounded-lg hover:bg-red-50 text-error transition-colors" onclick="deleteRow(this)" title="Delete record">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface transition-colors" data-cat="Peripherals" data-id="#REQ-1089" data-status="Completed">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-semibold">
+              #REQ-1089
+            </td>
+<td class="py-4 px-4">
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Pooja Patel</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">p.patel@student.edu • +91 97721 00923</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg">3x HP Laserjet Multifunction Printers</span>
+<span class="font-body-sm text-body-sm text-outline">Category: Printers &amp; Peripherals</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span>
+<span>Oct 22, 2024</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Completed
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openModal('#REQ-1089', 'Pooja Patel', '3x HP Laserjet Printers', 'Oct 22, 2024', 'Completed', 'Girls Hostel 2, Ground Floor Lobby')" title="View Detail">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<span class="text-xs text-secondary italic px-2">Archived</span>
+<button class="p-1.5 rounded-lg hover:bg-red-50 text-error transition-colors" onclick="deleteRow(this)" title="Delete record">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface transition-colors" data-cat="Mobiles" data-id="#REQ-1088" data-status="Pending">
+<td class="py-4 px-4 font-label-md text-label-md text-primary font-semibold">
+              #REQ-1088
+            </td>
+<td class="py-4 px-4">
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Devika Nair</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">devikan@alumni.org • +91 93310 55671</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg">4x Broken Android Phones &amp; 2 Tablets</span>
+<span class="font-body-sm text-body-sm text-outline">Category: Mobile Devices</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span>
+<span>Oct 27, 2024</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                Pending
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openModal('#REQ-1088', 'Devika Nair', '4x Phones, 2x Tablets', 'Oct 27, 2024', 'Pending', 'Admin Gatehouse Collection Point')" title="View Detail">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="px-2.5 py-1 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm transition-colors" onclick="updateStatus(this, 'Approved')" title="Approve Request">
+                  Approve
+                </button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" onclick="updateStatus(this, 'Scheduled')" title="Schedule Pickup">
+                  Schedule
+                </button>
+<button class="p-1.5 rounded-lg hover:bg-red-50 text-error transition-colors" onclick="deleteRow(this)" title="Delete record">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty state (hidden by default) -->
+<div class="hidden py-12 flex-col items-center justify-center text-center" id="noResultsNotice">
+<span class="material-symbols-outlined text-outline text-[48px] mb-2">search_off</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">No collection requests match your filters</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Try refining your keyword query or resetting status selections.</p>
+</div>
+</div>
+<!-- OPERATIONAL OVERVIEW SECTION (2 COLUMNS) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- LEFT: HUB CAPACITY -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Collection Hub Capacity</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time bin volume levels across campus facilities</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+          Sensor Mesh Active
+        </span>
+</div>
+<div class="space-y-4 pt-2">
+<!-- North Hub -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-title-md text-title-md text-on-surface">North Academic Annex (Tech Hub)</span>
+<span class="font-label-sm text-label-sm font-bold text-amber-700">78% Full</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-amber-500 rounded-full transition-all duration-500" style="width: 78%"></div>
+</div>
+<div class="flex justify-between text-xs text-outline mt-1 font-label-sm">
+<span>Capacity: 800 kg</span>
+<span>Current: 624 kg</span>
+</div>
+</div>
+<!-- South Hub -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-title-md text-title-md text-on-surface">South Engineering Workshops</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">45% Full</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 45%"></div>
+</div>
+<div class="flex justify-between text-xs text-outline mt-1 font-label-sm">
+<span>Capacity: 1,200 kg</span>
+<span>Current: 540 kg</span>
+</div>
+</div>
+<!-- East Hub -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-title-md text-title-md text-on-surface">East Residential Precinct</span>
+<span class="font-label-sm text-label-sm font-bold text-error">90% Full • Critical</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-error rounded-full transition-all duration-500" style="width: 90%"></div>
+</div>
+<div class="flex justify-between text-xs text-outline mt-1 font-label-sm">
+<span>Capacity: 500 kg</span>
+<span>Current: 450 kg (Needs Urgent Dispatch)</span>
+</div>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container-high/40 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-outline">Total Campus Storage: 2,500 kg max capacity</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm transition-colors" onclick="alert('Priority collection van dispatched to East Precinct Hub.')">
+          Dispatch Evacuation
+        </button>
+</div>
+</div>
+<!-- RIGHT: MATERIAL BREAKDOWN -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recycling Output Breakdown</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recovered raw elemental resources from processed intake</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+          ISO 14001 Audit
+        </span>
+</div>
+<!-- Segmented Visual Bar -->
+<div class="pt-2">
+<div class="w-full h-4 rounded-full overflow-hidden flex shadow-inner">
+<div class="bg-primary" style="width: 42%" title="Metals: 42%"></div>
+<div class="bg-secondary-fixed" style="width: 35%" title="Plastics: 35%"></div>
+<div class="bg-surface-variant" style="width: 15%" title="Circuit Glass: 15%"></div>
+<div class="bg-amber-400" style="width: 8%" title="Hazardous Neutralized: 8%"></div>
+</div>
+<!-- Legend & metrics list -->
+<div class="grid grid-cols-2 gap-3 mt-5">
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center gap-3">
+<span class="w-3.5 h-3.5 rounded-sm bg-primary shrink-0"></span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">42%</div>
+<div class="font-label-sm text-label-sm text-outline">Metals (Cu, Au, Al)</div>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center gap-3">
+<span class="w-3.5 h-3.5 rounded-sm bg-secondary-fixed shrink-0"></span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">35%</div>
+<div class="font-label-sm text-label-sm text-outline">Thermoplastics</div>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center gap-3">
+<span class="w-3.5 h-3.5 rounded-sm bg-surface-variant shrink-0"></span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">15%</div>
+<div class="font-label-sm text-label-sm text-outline">Circuit Glass / Silicon</div>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center gap-3">
+<span class="w-3.5 h-3.5 rounded-sm bg-amber-400 shrink-0"></span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">8%</div>
+<div class="font-label-sm text-label-sm text-outline">Neutralized Hazardous</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container-high/40 flex items-center justify-between text-xs text-outline">
+<span>Verified downstream partners: 4 Smelters • 2 Polymer Refiners</span>
+<span class="text-primary font-semibold">Zero Landfill Goal</span>
+</div>
+</div>
+</div>
+<!-- ACADEMIC ARCHITECTURE & EVALUATION CALLOUT -->
+<div class="rounded-xl bg-surface-container p-5 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Academic Architecture Note</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase">Full Stack Flow</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Demonstrates RESTful API endpoints (<code class="bg-surface-container-lowest px-1.5 py-0.5 rounded font-mono text-primary text-xs">GET /api/requests</code>, <code class="bg-surface-container-lowest px-1.5 py-0.5 rounded font-mono text-primary text-xs">PATCH /api/requests/:id</code>, <code class="bg-surface-container-lowest px-1.5 py-0.5 rounded font-mono text-primary text-xs">DELETE /api/requests/:id</code>) with role-based access control (Admin vs Citizen). All table mutation controls above fire mock asynchronous promises.
+        </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-2 self-end md:self-center">
+<span class="font-label-sm text-label-sm text-outline">v2.4 Final Submission</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Ready for Viva</span>
+</div>
+</div>
+<!-- MODAL DIALOG (VIEW DETAIL) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/45 backdrop-blur-[4px]" id="detailModal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-2xl p-6 relative">
+<div class="flex items-center justify-between border-b border-surface-container-high/60 pb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">receipt_long</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modalReqId">#REQ-0000</h3>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-outline" onclick="closeModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="py-4 space-y-3 font-body-md text-body-md">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Citizen / Requester</span>
+<span class="font-title-md text-title-md text-on-surface" id="modalCitizen">--</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Hardware Manifest</span>
+<span class="font-title-md text-title-md text-on-surface" id="modalItems">--</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Campus Pickup Location</span>
+<span class="text-on-surface-variant" id="modalLocation">--</span>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-2">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Assigned Date</span>
+<span class="font-label-lg text-label-lg text-on-surface" id="modalDate">--</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Lifecycle Status</span>
+<span class="font-label-lg text-label-lg text-primary" id="modalStatus">--</span>
+</div>
+</div>
+</div>
+<div class="flex justify-end gap-2 pt-4 border-t border-surface-container-high/60">
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg" onclick="closeModal()">
+          Dismiss
+        </button>
+<button class="px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg" onclick="alert('Digital gate pass dispatched to requester SMS/Email.'); closeModal();">
+          Issue Gate Pass
+        </button>
+</div>
+</div>
+</div>
+<!-- TOAST NOTIFICATION -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-lg shadow-lg flex items-center gap-2" id="toast">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]" id="toastIcon">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMessage">Action completed successfully</span>
+</div>
+</div>
+<!-- INLINE CLIENT JAVASCRIPT FOR OPERATIONAL INTERACTION -->
+<script>
+  function toggleExportMenu() {
+    const menu = document.getElementById('exportMenu');
+    menu.classList.toggle('hidden');
+  }
+
+  window.addEventListener('click', function(e) {
+    const wrapper = document.getElementById('exportMenuWrapper');
+    if (wrapper && !wrapper.contains(e.target)) {
+      document.getElementById('exportMenu').classList.add('hidden');
+    }
+  });
+
+  function showToast(msg, icon = 'check_circle') {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+    toastMsg.innerText = msg;
+    toastIcon.innerText = icon;
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0');
+    }, 2800);
+  }
+
+  function simulateExport(format) {
+    document.getElementById('exportMenu').classList.add('hidden');
+    showToast(`Generating audit dataset (${format})... Download begun.`);
+  }
+
+  function triggerRefreshAnimation() {
+    const icon = document.getElementById('refreshIcon');
+    icon.classList.add('animate-spin');
+    setTimeout(() => {
+      icon.classList.remove('animate-spin');
+      showToast('Live database sync complete & fresh records fetched.');
+    }, 600);
+  }
+
+  function applyFilters() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    const cat = document.getElementById('categoryFilter').value;
+    const status = document.getElementById('statusFilter').value;
+    const rows = document.querySelectorAll('#tableBody tr');
+    let visibleCount = 0;
+
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      const rowCat = row.getAttribute('data-cat') || '';
+      const rowStatus = row.getAttribute('data-status') || '';
+
+      const matchesText = text.includes(query);
+      const matchesCat = (cat === 'ALL' || rowCat === cat);
+      const matchesStatus = (status === 'ALL' || rowStatus === status);
+
+      if (matchesText && matchesCat && matchesStatus) {
+        row.style.display = '';
+        visibleCount++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    document.getElementById('recordsBadge').innerText = `Showing ${visibleCount} records`;
+    const notice = document.getElementById('noResultsNotice');
+    if (visibleCount === 0) {
+      notice.classList.remove('hidden');
+      notice.classList.add('flex');
+    } else {
+      notice.classList.add('hidden');
+      notice.classList.remove('flex');
+    }
+  }
+
+  function resetFilters() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('categoryFilter').value = 'ALL';
+    document.getElementById('statusFilter').value = 'ALL';
+    applyFilters();
+    showToast('Filters cleared');
+  }
+
+  function updateStatus(button, newStatus) {
+    const row = button.closest('tr');
+    row.setAttribute('data-status', newStatus);
+    const statusCell = row.children[4];
+
+    if (newStatus === 'Approved') {
+      statusCell.innerHTML = `
+        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-blue-100 text-blue-800 font-label-sm text-label-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+          Approved
+        </span>`;
+      // Decrement pending metric demo
+      const pend = document.getElementById('statPendingCount');
+      if (pend && parseInt(pend.innerText) > 0) {
+        pend.innerText = parseInt(pend.innerText) - 1;
+      }
+    } else if (newStatus === 'Scheduled') {
+      statusCell.innerHTML = `
+        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-800 font-label-sm text-label-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+          Scheduled
+        </span>`;
+    } else if (newStatus === 'Completed') {
+      statusCell.innerHTML = `
+        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+          Completed
+        </span>`;
+    }
+
+    showToast(`Request ${row.getAttribute('data-id')} updated to ${newStatus}`);
+  }
+
+  function deleteRow(button) {
+    const row = button.closest('tr');
+    const id = row.getAttribute('data-id');
+    if (confirm(`Confirm purge of record ${id} from operational register?`)) {
+      row.remove();
+      applyFilters();
+      const total = document.getElementById('statTotalCount');
+      if (total && parseInt(total.innerText) > 0) {
+        total.innerText = parseInt(total.innerText) - 1;
+      }
+      showToast(`Record ${id} removed successfully`, 'delete');
+    }
+  }
+
+  function openModal(id, citizen, items, date, status, location) {
+    document.getElementById('modalReqId').innerText = id;
+    document.getElementById('modalCitizen').innerText = citizen;
+    document.getElementById('modalItems').innerText = items;
+    document.getElementById('modalDate').innerText = date;
+    document.getElementById('modalStatus').innerText = status;
+    document.getElementById('modalLocation').innerText = location;
+    document.getElementById('detailModal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('detailModal').classList.add('hidden');
+  }
+</script></main></div></body></html>

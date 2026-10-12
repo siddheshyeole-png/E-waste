@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Manipulation Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f0fdf4;
+      color: #166534;
+      padding: 2.5rem 1.5rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .demo-container {
+      background: #ffffff;
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 540px;
+      width: 100%;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+    h1 {
+      font-size: 1.5rem;
+      color: #15803d;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: #4b5563;
+      font-size: 0.925rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #1f2937;
+      margin-bottom: 0.4rem;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    input[type="text"]:focus {
+      border-color: #22c55e;
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+    }
+    .button-group {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    button {
+      flex: 1;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+    button:active {
+      transform: scale(0.98);
+    }
+    #showButton {
+      background: #16a34a;
+      color: #ffffff;
+    }
+    #showButton:hover {
+      background: #15803d;
+    }
+    #clearButton {
+      background: #e2e8f0;
+      color: #334155;
+    }
+    #clearButton:hover {
+      background: #cbd5e1;
+    }
+    .output-section {
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      min-height: 54px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    #output {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #0f172a;
+    }
+    .academic-note {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 1.25rem;
+      font-size: 0.85rem;
+      color: #475569;
+      line-height: 1.5;
+    }
+    .academic-note strong {
+      color: #15803d;
+    }
+    .academic-note code {
+      background: #dcfce7;
+      color: #166534;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    .nav-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #15803d;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.875rem;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="demo-container">
+    <h1>JavaScript DOM Manipulation Demo</h1>
+    <p class="subtitle">
+      Academic demonstration of imperative DOM access and event listeners (Assignment 11).
+    </p>
+
+    <!-- Form Section -->
+    <div class="form-group">
+      <label for="nameInput">Enter Your Name:</label>
+      <input type="text" id="nameInput" placeholder="e.g. Siddhesh" autocomplete="off" />
+    </div>
+
+    <!-- Actions Section (No inline onclick attributes) -->
+    <div class="button-group">
+      <button type="button" id="showButton">Show Name</button>
+      <button type="button" id="clearButton">Clear</button>
+    </div>
+
+    <!-- Dynamic Output Element -->
+    <div class="output-section">
+      <div id="output"></div>
+    </div>
+
+    <!-- Academic Viva Reference Section -->
+    <div class="academic-note">
+      <strong>Concepts Demonstrated:</strong>
+      <ul style="margin-left: 1.25rem; margin-top: 0.4rem; margin-bottom: 0.6rem;">
+        <li><code>document.getElementById()</code> for selecting DOM elements</li>
+        <li><code>addEventListener("click", handler)</code> for event binding</li>
+        <li><code>element.value</code> for reading input data</li>
+        <li>Client-side validation checking for empty/whitespace input</li>
+        <li><code>element.innerHTML</code> for dynamic DOM modification</li>
+      </ul>
+      <p>
+        <em>Academic Note:</em> This standalone page demonstrates traditional imperative DOM manipulation. In the main EcoCycle application, React handles DOM updates declaratively via the Virtual DOM and <code>useState</code>.
+      </p>
+      <a href="/test.html" class="nav-link">&larr; Back to Backend Static Test</a>
+    </div>
+  </div>
+
+  <!-- Traditional Imperative JavaScript (No React, No Inline Handlers) -->
+  <script>
+    // 1. Select DOM elements using document.getElementById()
+    const nameInput = document.getElementById("nameInput");
+    const showButton = document.getElementById("showButton");
+    const clearButton = document.getElementById("clearButton");
+    const output = document.getElementById("output");
+
+    // 2. Attach click event listener to "Show Name" button
+    showButton.addEventListener("click", function () {
+      // Read the input value and trim leading/trailing whitespace
+      const name = nameInput.value.trim();
+
+      // Check whether the value is empty
+      if (name === "") {
+        // Validation failure: use innerHTML to display error message
+        output.innerHTML = "Please enter your name.";
+      } else {
+        // Success: use innerHTML to display greeting
+        output.innerHTML = "Hello, " + name + "!";
+      }
+    });
+
+    // 3. Attach click event listener to "Clear" button
+    clearButton.addEventListener("click", function () {
+      // Clear the input field
+      nameInput.value = "";
+
+      // Clear the output using innerHTML
+      output.innerHTML = "";
+    });
+  </script>
+
+</body>
+</html>

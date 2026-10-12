@@ -1,0 +1,3 @@
+@echo off
+echo Starting EcoCycle PHP Server on http://localhost:8000 ...
+"C:\Users\acer\AppData\Local\Microsoft\WinGet\Packages\PHP.PHP.8.3_Microsoft.Winget.Source_8wekyb3d8bbwe\php.exe" -S localhost:8000
